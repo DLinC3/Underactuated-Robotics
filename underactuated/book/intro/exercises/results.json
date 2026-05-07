@@ -1,0 +1,19 @@
+{
+    "tests": [
+        {
+            "name": "test_dynamics (underactuated.exercises.intro.test_drake_systems.TestDrakeSystems.test_dynamics)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        },
+        {
+            "name": "test_input_and_state (underactuated.exercises.intro.test_drake_systems.TestDrakeSystems.test_input_and_state)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.01",
+    "score": 2
+}
