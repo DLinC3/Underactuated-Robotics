@@ -1,13 +1,25 @@
 {
     "tests": [
         {
-            "name": "Test optimal cost-to-go from Linear Program",
+            "name": "Test compute u_star",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test policy",
             "score": 6,
             "max_score": 6,
+            "status": "passed"
+        },
+        {
+            "name": "Test compute state cost",
+            "score": 2,
+            "max_score": 2,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.00",
-    "score": 6
+    "execution_time": "0.30",
+    "score": 10
 }
