@@ -1,0 +1,31 @@
+{
+    "tests": [
+        {
+            "name": "test_actuator_model (underactuated.exercises.lqr.test_drake_diagrams.TestDrakeDiagrams.test_actuator_model)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        },
+        {
+            "name": "test_controller (underactuated.exercises.lqr.test_drake_diagrams.TestDrakeDiagrams.test_controller)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        },
+        {
+            "name": "test_diagram (underactuated.exercises.lqr.test_drake_diagrams.TestDrakeDiagrams.test_diagram)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        },
+        {
+            "name": "test_diagram_context (underactuated.exercises.lqr.test_drake_diagrams.TestDrakeDiagrams.test_diagram_context)",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.00",
+    "score": 4
+}
