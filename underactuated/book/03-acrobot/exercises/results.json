@@ -1,43 +1,43 @@
 {
     "tests": [
         {
-            "name": "Test state space dynamics",
-            "score": 4,
-            "max_score": 4,
-            "status": "passed"
-        },
-        {
-            "name": "Test linearization matrix A",
+            "name": "Test double-pendulum cart-pole LQR states",
             "score": 2,
             "max_score": 2,
             "status": "passed"
         },
         {
-            "name": "Test linearization matrix B",
+            "name": "Test double-pendulum cart-pole dynamics",
+            "score": 3,
+            "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Test single-pendulum cart-pole LQR states",
             "score": 2,
             "max_score": 2,
             "status": "passed"
         },
         {
-            "name": "Test x_list and u_list content",
+            "name": "Test single-pendulum cart-pole dynamics",
+            "score": 3,
+            "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Test x_star for double pendulum",
             "score": 1,
             "max_score": 1,
             "status": "passed"
         },
         {
-            "name": "Test linearization errors",
-            "score": 2,
-            "max_score": 2,
-            "status": "passed"
-        },
-        {
-            "name": "Test for which the system is able to recover",
-            "score": 2,
-            "max_score": 2,
+            "name": "Test x_star for single pendulum",
+            "score": 1,
+            "max_score": 1,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.00",
-    "score": 13
+    "execution_time": "0.01",
+    "score": 12
 }
