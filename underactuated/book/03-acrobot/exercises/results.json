@@ -1,0 +1,43 @@
+{
+    "tests": [
+        {
+            "name": "Test state space dynamics",
+            "score": 4,
+            "max_score": 4,
+            "status": "passed"
+        },
+        {
+            "name": "Test linearization matrix A",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test linearization matrix B",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test x_list and u_list content",
+            "score": 1,
+            "max_score": 1,
+            "status": "passed"
+        },
+        {
+            "name": "Test linearization errors",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test for which the system is able to recover",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.00",
+    "score": 13
+}
