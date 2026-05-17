@@ -1,0 +1,19 @@
+{
+    "tests": [
+        {
+            "name": "Test PSD functions",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test SOS functions",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.00",
+    "score": 4
+}
