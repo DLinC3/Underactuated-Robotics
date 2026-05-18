@@ -3,7 +3,7 @@ import jax.numpy as jnp
 import jax.scipy as jsp
 import matplotlib.pyplot as plt
 
-from microQPSWIFT import microQPSWIFTSolver
+from barrierQP import barrierQPSolver
 from tester import Tester
 
 
