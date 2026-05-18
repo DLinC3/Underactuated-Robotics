@@ -1,3 +1,0 @@
-[submodule "underactuated/book/App-c-optimization/splitQP"]
-	path = underactuated/book/App-c-optimization/splitQP
-	url = https://github.com/denglinc/splitQP.git
