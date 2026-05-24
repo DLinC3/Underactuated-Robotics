@@ -1,19 +1,19 @@
 {
     "tests": [
         {
-            "name": "Test PSD functions",
-            "score": 2,
-            "max_score": 2,
+            "name": "Test Lyapunov controller away from origin",
+            "score": 4,
+            "max_score": 4,
             "status": "passed"
         },
         {
-            "name": "Test SOS functions",
-            "score": 2,
-            "max_score": 2,
+            "name": "Test Lyapunov controller near origin",
+            "score": 4,
+            "max_score": 4,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.00",
-    "score": 4
+    "execution_time": "0.03",
+    "score": 8
 }
