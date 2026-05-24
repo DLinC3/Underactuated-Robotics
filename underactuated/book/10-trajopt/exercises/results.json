@@ -1,37 +1,55 @@
 {
     "tests": [
         {
-            "name": "Test value function Riccati recursion",
-            "score": 4,
-            "max_score": 4,
+            "name": "Test discrete_dynamics",
+            "score": 1,
+            "max_score": 1,
             "status": "passed"
         },
         {
-            "name": "Test value function direct transcription",
-            "score": 4,
-            "max_score": 4,
+            "name": "Test rollout",
+            "score": 1,
+            "max_score": 1,
             "status": "passed"
         },
         {
-            "name": "Test construction of diagonal block of Mb",
-            "score": 4,
-            "max_score": 4,
+            "name": "Test cost_trj",
+            "score": 1,
+            "max_score": 1,
             "status": "passed"
         },
         {
-            "name": "Test number of bits lost with direct shooting",
+            "name": "Test Q_terms",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed"
+        },
+        {
+            "name": "Test gains",
             "score": 3,
             "max_score": 3,
             "status": "passed"
         },
         {
-            "name": "Test number of bits lost with direct transcription",
+            "name": "Test V_terms",
             "score": 3,
             "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Test forward_pass",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Test backward_pass",
+            "score": 2,
+            "max_score": 2,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.01",
+    "execution_time": "0.00",
     "score": 18
 }
