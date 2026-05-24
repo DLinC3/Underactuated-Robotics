@@ -2,34 +2,30 @@
     "tests": [
         {
             "name": "Test asteroid collision",
-            "score": 0.0,
+            "score": 6,
             "max_score": 6,
-            "status": "failed",
-            "output": "Test Failed: np.False_ is not true : Collision with asteroid 1 at time step 24.\n"
+            "status": "passed"
         },
         {
             "name": "Test fuel consumption",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "status": "failed",
-            "output": "Test Failed: np.False_ is not true : Fuel consumption is 415.4619829045115, greater than 250.\n"
+            "status": "passed"
         },
         {
             "name": "Test thrust limits",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "status": "failed",
-            "output": "Test Failed: np.False_ is not true : Thrust limit violated at time step 0.\n"
+            "status": "passed"
         },
         {
             "name": "Test velocity limits",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "status": "failed",
-            "output": "Test Failed: np.False_ is not true : Velocity limit violated at time step 29.\n"
+            "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.02",
-    "score": 0.0
+    "execution_time": "0.03",
+    "score": 15
 }
