@@ -1,31 +1,37 @@
 {
     "tests": [
         {
-            "name": "Test asteroid collision",
-            "score": 6,
-            "max_score": 6,
+            "name": "Test value function Riccati recursion",
+            "score": 4,
+            "max_score": 4,
             "status": "passed"
         },
         {
-            "name": "Test fuel consumption",
+            "name": "Test value function direct transcription",
+            "score": 4,
+            "max_score": 4,
+            "status": "passed"
+        },
+        {
+            "name": "Test construction of diagonal block of Mb",
+            "score": 4,
+            "max_score": 4,
+            "status": "passed"
+        },
+        {
+            "name": "Test number of bits lost with direct shooting",
             "score": 3,
             "max_score": 3,
             "status": "passed"
         },
         {
-            "name": "Test thrust limits",
-            "score": 3,
-            "max_score": 3,
-            "status": "passed"
-        },
-        {
-            "name": "Test velocity limits",
+            "name": "Test number of bits lost with direct transcription",
             "score": 3,
             "max_score": 3,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.03",
-    "score": 15
+    "execution_time": "0.01",
+    "score": 18
 }
