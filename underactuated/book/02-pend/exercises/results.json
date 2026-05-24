@@ -1,13 +1,13 @@
 {
     "tests": [
         {
-            "name": "Test pendulum controller",
-            "score": 8,
-            "max_score": 8,
+            "name": "Test Hopfield Network",
+            "score": 6,
+            "max_score": 6,
             "status": "passed"
         }
     ],
     "leaderboard": [],
-    "execution_time": "0.00",
-    "score": 8
+    "execution_time": "0.01",
+    "score": 6
 }
