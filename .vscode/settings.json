@@ -1,0 +1,8 @@
+{
+  "python.defaultInterpreterPath": "/Users/denglincheng/venvs/drake-py314/bin/python",
+  "python-envs.workspaceSearchPaths": [
+    "/Users/denglincheng/venvs/*",
+    "./**/.venv"
+  ],
+  "python.terminal.activateEnvironment": true
+}
