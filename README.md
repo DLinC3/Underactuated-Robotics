@@ -239,7 +239,10 @@ This section reviews how to replace per-sample loops with batched arrays, `meshg
 
 </details>
 
-#### Some useful links:
+---
+
+<details>
+<summary><strong>Some useful links</strong></summary>
 
 https://underactuated.csail.mit.edu/
 
@@ -248,3 +251,5 @@ https://github.com/RussTedrake/underactuated
 https://underactuated.csail.mit.edu/Spring2024/
 
 https://www.youtube.com/channel/UChfUOAhz7ynELF-s_1LPpWg
+
+</details>
