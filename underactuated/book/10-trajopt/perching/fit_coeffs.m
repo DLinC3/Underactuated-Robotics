@@ -4,7 +4,6 @@
 %   - Residual: ΔC_L(α, δ_e) ≈ θ^T φ([α; δ_e]) with RBF features + bias
 %   - Fit θ by ridge regression: θ = (Φ'Φ + γI)^{-1} Φ'y
 %
-% notes for my future self:
 %   1) loads data-driven lift residuals (Cl) and flat-plate baseline (Clfp)
 %   2) constructs a tiled grid of RBF centers μ_i over (α, δ_e)
 %   3) fits θ via regularized least squares
