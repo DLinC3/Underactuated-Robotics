@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Zero-Order trajectory optimization for a perching glider (CEM / MPPI)
 %
-% Notes to My Future Self:
 % - Both methods are "rollout dominated": repeatedly sample open-loop controls,
 %   simulate forward with Euler integration, evaluate cost, then update U.
 % - CEM: fit a diagonal Gaussian over u_k via elite-set MLE (mean/variance).

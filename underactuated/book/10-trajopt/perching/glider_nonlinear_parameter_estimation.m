@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Online identification in EKF:
 %
-% notes for my future self:
 % Nonlinear dynamics (7D glider) depend on:
 %   - aerodynamic parameters θ = [l_w; S_e]
 %   - wind disturbance w = [v_x^0; v_z^0] (treated as time-varying in sim)

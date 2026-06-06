@@ -2,7 +2,6 @@
 %
 %   plan (iLQR) -> execute (sim) -> identify (ridge LS) -> re-plan
 %
-% notes for my future self:
 %   Learned planner dynamics use a linear-in-parameters aerodynamic residual:
 %       xdot = f(x,u) + g(x,u) θ,
 %       θ = [θ_Cl; θ_Cd; θ_Cm]
