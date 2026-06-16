@@ -138,7 +138,7 @@ This section reviews decision variables, costs, constraints, solvers, debugging,
 ---
 
 <details>
-<summary><strong>Humanoid / Legged Locomotion</strong></summary>
+<summary><strong>Humanoid</strong></summary>
 
 - [`slip.ipynb`](underactuated/book/04-simple_legs/slip.ipynb) — Builds the SLIP template as a `LeafSystem` whose `namedview` state and `MakeWitnessFunction` touchdown/takeoff/apex events encode the stance/flight hybrid switching behind the apex-to-apex return map.
 - [`one_d_hopper.ipynb`](underactuated/book/04-simple_legs/exercises/one_d_hopper.ipynb) — Models the spring as a `LeafSystem` actuator and drives a `PreloadController` that detects bottom/apex from the body-velocity sign change and injects energy via a vectorized mechanical-energy budget.
