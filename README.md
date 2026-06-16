@@ -52,9 +52,6 @@ This section reviews URDF/SDF parsing, `MultibodyPlant`, `SceneGraph`, geometry,
 - [`underactuated/book/03-acrobot/exercises/cartpoles_urdf.ipynb`](underactuated/book/03-acrobot/exercises/cartpoles_urdf.ipynb)  
   A hands-on URDF exercise for building, parsing, visualizing, and controlling cart-pole models.
 
-- [`underactuated/book/App-B-multibody/`](underactuated/book/App-B-multibody/)  
-  A deeper multibody appendix for dynamics, contact, and complementarity-related ideas.
-
 - [`underactuated/book/00-tutorials/mathematical_program_multibody_plant.ipynb`](underactuated/book/00-tutorials/mathematical_program_multibody_plant.ipynb)  
   Builds an optimization problem around an IIWA `MultibodyPlant`, especially for IK-style problems, using custom evaluators compatible with both `float` and `AutoDiffXd`.
 
@@ -88,12 +85,6 @@ This section reviews hydroelastic contact, contact results, contact visualizatio
 - [`underactuated/book/00-tutorials/hydroelastic_contact_nonconvex_mesh.ipynb`](underactuated/book/00-tutorials/hydroelastic_contact_nonconvex_mesh.ipynb)  
   Shows how to configure hydroelastic contact for nonconvex mesh geometry.
 
-- [`underactuated/book/17-contact/`](underactuated/book/17-contact/)  
-  A broader contact chapter covering hybrid dynamics, contact examples, and optimization-based contact problems.
-
-- [`underactuated/book/App-B-multibody/`](underactuated/book/App-B-multibody/)  
-  A deeper appendix for multibody dynamics and contact-related theory.
-
 ---
 
 #### 6. AutoDiff and Scalar Types
@@ -116,10 +107,10 @@ This section reviews decision variables, costs, constraints, solvers, debugging,
   The main introduction to `MathematicalProgram`, including variables, constraints, costs, solvers, and solution inspection.
 
 - [`underactuated/book/00-tutorials/linear_program.ipynb`](underactuated/book/00-tutorials/linear_program.ipynb)  
-  Introduces linear programming in Drake.
+  Builds and solves a small linear program as a template for LP modeling in Drake.
 
 - [`underactuated/book/00-tutorials/quadratic_program.ipynb`](underactuated/book/00-tutorials/quadratic_program.ipynb)  
-  Introduces quadratic programming in Drake.
+  Builds and solves a small quadratic program as a template for QP modeling in Drake.
 
 - [`underactuated/book/00-tutorials/nonlinear_program.ipynb`](underactuated/book/00-tutorials/nonlinear_program.ipynb)  
   Introduces nonlinear programming, custom costs, custom constraints, and initial guesses.
@@ -137,14 +128,27 @@ This section reviews decision variables, costs, constraints, solvers, debugging,
   Shows how to provide custom gradients for optimization costs and constraints.
 
 - [`underactuated/book/00-tutorials/sum_of_squares_optimization.ipynb`](underactuated/book/00-tutorials/sum_of_squares_optimization.ipynb)  
-  Introduces sum-of-squares optimization in Drake.
+  Sets up a sum-of-squares program for certifying polynomial nonnegativity in Drake.
 
 - [`underactuated/book/00-tutorials/licensed_solvers_deepnote.ipynb`](underactuated/book/00-tutorials/licensed_solvers_deepnote.ipynb)  
   Covers setup notes for licensed solvers such as Mosek and Gurobi.
 
-- [`underactuated/book/App-c-optimization/`](underactuated/book/App-c-optimization/)  
-  A deeper optimization appendix covering advanced topics beyond the basic `MathematicalProgram` tutorials.
+</details>
 
+---
+
+<details>
+<summary><strong>Humanoid / Legged Locomotion</strong></summary>
+
+- [`slip.ipynb`](underactuated/book/04-simple_legs/slip.ipynb) — Builds the SLIP template as a `LeafSystem` whose `namedview` state and `MakeWitnessFunction` touchdown/takeoff/apex events encode the stance/flight hybrid switching behind the apex-to-apex return map.
+- [`one_d_hopper.ipynb`](underactuated/book/04-simple_legs/exercises/one_d_hopper.ipynb) — Models the spring as a `LeafSystem` actuator and drives a `PreloadController` that detects bottom/apex from the body-velocity sign change and injects energy via a vectorized mechanical-energy budget.
+- [`footstep_planning.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning.ipynb) — Decomposes MIQP footstep planning into stepping-stone halfspaces, one-hot stone binaries, big-M halfspace activation, step-span reachability limits, and a quadratic step-length cost solved by branch-and-bound.
+- [`footstep_planning_gcs.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning_gcs.ipynb) — Recasts footstep planning as a GCS shortest path with `HPolyhedron` vertices, copied stone vertices for repeated steps, `e.xu()`/`e.xv()` edge reachability constraints, and unit edge costs under convex relaxation.
+- [`littledog.ipynb`](underactuated/book/05-humanoids/littledog.ipynb) — A quadruped code study in generated `namedview` position/velocity views, per-gait `in_stance`/stride bookkeeping, per-timestep AutoDiff contexts, and whole-body (centroidal + full-kinematics) trajectory optimization with `PositionConstraint`/`OrientationConstraint`.
+- [`compass_gait_limit_cycle.ipynb`](underactuated/book/17-contact/exercises/compass_gait_limit_cycle.ipynb) — Packages floating-base compass-gait dynamics into AutoDiff-compatible `MathematicalProgram` callbacks (manipulator equations, swing-foot kinematics, heel-strike impulse) with friction-cone contact forces and mirrored-periodicity constraints.
+- [`basketball.ipynb`](underactuated/book/17-contact/basketball.ipynb) — A fixed-mode-sequence hybrid optimization that stitches analytic ballistic flight arcs together with `set_description`-labeled guard constraints and restitution/spin reset maps.
+- [`multibody.ipynb`](underactuated/book/App-B-multibody/multibody.ipynb) — Compares time-stepping LCP contact resolution against MuJoCo-style relaxed complementarity-free contact by building the `q[n+1]` and contact-force `f[n]` update surfaces over the `(q, v)` grid.
+- [`gcs.ipynb`](underactuated/book/App-C-optimization/gcs.ipynb) — A reusable Drake GCS pattern: `AddVertex` over `Point`/`VPolytope`/`Hyperellipsoid` sets, `AddEdge` costs, `e.xu()`/`e.xv()` edge variables, and a `SolveShortestPath` relaxation that reduces to the classic LP when every vertex is a point.
 
 </details>
 
@@ -157,7 +161,7 @@ Unique notebooks that are useful for code techs:
 
 #### 1. Clean State Representation
 
-How to make vector-valued robot states readable by using physically meaningful named fields instead of like x[12].
+How to make vector-valued robot states readable by using physically meaningful named fields instead of raw indices like `x[12]`.
 
 - [`underactuated/book/04-simple_legs/slip.ipynb`](underactuated/book/04-simple_legs/slip.ipynb)  
   Uses `namedview` to access SLIP states as physical fields such as `s.r`, `s.theta`, and `s.rdot`.
@@ -178,10 +182,7 @@ How to separate physical data, model logic, optimization variables, and solver w
   Separates `Rocket`, `Planet`, and `Universe`, then uses clean dynamics and constraint residuals inside a trajectory optimization.
 
 - [`underactuated/book/12-planning/exercises/rrt_planning.ipynb`](underactuated/book/12-planning/exercises/rrt_planning.ipynb)  
-  Implements RRT/RRT* with clean algorithmic OOP, nested `Node` classes, and inheritance from `RRT` to `RRTStar` (I feel classic but useful). 
-
-- [`underactuated/book/05-humanoids/exercises/footstep_planning.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning.ipynb)  
-  Separates terrain geometry, stepping-stone data, and mixed-integer optimization constraints into readable layers.
+  Implements RRT/RRT* with clean algorithmic OOP, nested `Node` classes, and inheritance from `RRT` to `RRTStar`.
 
 ---
 
@@ -203,25 +204,22 @@ This section reviews how to write dynamics and constraint functions that can ser
 
 ---
 
-#### 3. Optimization Problem Architecture
+#### 4. Optimization Problem Architecture
 
 This section reviews how to structure optimization code as a clear modeling pipeline: variables, constraints, costs, solve, and result extraction.
 
 - [`underactuated/book/10-trajopt/exercises/orbital_transfer.ipynb`](underactuated/book/10-trajopt/exercises/orbital_transfer.ipynb)  
-  A clean example of using physical residual functions directly as trajectory-optimization constraints.
+  Uses physical residual functions directly as trajectory-optimization constraints, keeping the dynamics and the constraint code in one place.
 
 - [`underactuated/book/05-humanoids/exercises/footstep_planning.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning.ipynb)  
-  Shows how to decompose a mixed-integer footstep planner into geometry classes and named optimization helper functions.
-
-- [`underactuated/book/17-contact/exercises/compass_gait_limit_cycle.ipynb`](underactuated/book/17-contact/exercises/compass_gait_limit_cycle.ipynb)  
-  Demonstrates careful vector packing, AutoDiff-compatible constraints, and multibody callbacks inside `MathematicalProgram`.
+  Decomposes the MIQP footstep planner into a `SteppingStone`/`Terrain` geometry layer and named helper functions that add variables, reachability limits, big-M stone assignments, and costs.
 
 - [`underactuated/book/03-acrobot/flatness.ipynb`](underactuated/book/03-acrobot/flatness.ipynb)  
-  Defines a compact `PPTrajectory` wrapper that hides polynomial decision variables, continuity constraints, evaluation, and solving.
+  Builds a compact `PPTrajectory` wrapper that hides polynomial decision variables, continuity constraints, evaluation, and solving.
 
 ---
 
-#### 4. Vectorization, Batching, and Neural Computation
+#### 5. Vectorization, Batching, and Neural Computation
 
 This section reviews how to replace per-sample loops with batched arrays, `meshgrid`, matrix products, and `einsum`.
 
