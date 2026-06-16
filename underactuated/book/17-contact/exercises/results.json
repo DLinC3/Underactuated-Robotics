@@ -1,0 +1,61 @@
+{
+    "tests": [
+        {
+            "name": "Implicit Euler equations are verified",
+            "score": 0,
+            "max_score": 0,
+            "status": "passed"
+        },
+        {
+            "name": "Impulsive collision is verified at the heel strike",
+            "score": 0,
+            "max_score": 0,
+            "status": "passed"
+        },
+        {
+            "name": "No penetration of the swing foot in the ground for all times",
+            "score": 3,
+            "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Periodicity of the walking gait",
+            "score": 0,
+            "max_score": 0,
+            "status": "passed"
+        },
+        {
+            "name": "Stance-foot contact force in friction cone for all times",
+            "score": 3,
+            "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Stance foot on the ground for all times",
+            "score": 3,
+            "max_score": 3,
+            "status": "passed"
+        },
+        {
+            "name": "Swing-foot impulse in friction cone",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Swing foot on the ground at time zero",
+            "score": 2,
+            "max_score": 2,
+            "status": "passed"
+        },
+        {
+            "name": "Time intervals are within bounds",
+            "score": 0,
+            "max_score": 0,
+            "status": "passed"
+        }
+    ],
+    "leaderboard": [],
+    "execution_time": "0.01",
+    "score": 13
+}
