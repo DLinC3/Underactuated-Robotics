@@ -151,7 +151,7 @@ This section reviews decision variables, costs, constraints, solvers, debugging,
 ---
 
 <details>
-<summary><strong>Code Techniques Map</strong></summary>
+<summary><strong>Code Tech Map</strong></summary>
 
 Unique notebooks that are useful for code techs:
 
@@ -242,13 +242,48 @@ This section reviews how to replace per-sample loops with batched arrays, `meshg
 ---
 
 <details>
-<summary><strong>Some useful links</strong></summary>
+<summary><strong>Hydroelastic Contact</strong></summary>
+
+Hydroelastic contact models contact as a pressure-distributed surface patch rather than a small set of point contacts.
+
+- [Newton documentation: Collisions and Contacts](https://newton-physics.github.io/newton/stable/concepts/collisions.html)  
+  The best Newton-specific starting point. It explains how hydroelastic contact is enabled in Newton, including SDF requirements, mesh/primitive setup, contact flags, stiffness parameters, and example scripts.
+
+- [GPU-Accelerated Hydroelastic Contact via Signed Distance Fields](https://openreview.net/pdf?id=ogndqznZyY)  
+  The key Newton-related technical paper. It explains Newton's SDF-based hydroelastic contact formulation, including how contact surfaces are extracted and reduced for GPU-parallel simulation.
+
+- [NVIDIA Technical Blog: Newton Adds Contact-Rich Manipulation and Locomotion Capabilities](https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics/)  
+  A practical engineering overview of Newton 1.0, SDF collision, hydroelastic contact, MuJoCo Warp integration, and Isaac Lab usage.
+
+- [TRI Medium: Rethinking Contact Simulation for Robot Manipulation](https://medium.com/toyotaresearch/rethinking-contact-simulation-for-robot-manipulation-434a56b5ec88)  
+  The most intuitive introduction to why point contact can be insufficient for manipulation and why contact patches and pressure fields are useful.
+
+- [Drake Hydroelastic Contact User Guide](https://drake.mit.edu/doxygen_cxx/group__hydroelastic__user__guide.html)  
+  A strong implementation-oriented reference for the original Drake-style hydroelastic contact model, including compliant/rigid hydroelastic geometry choices and fallback behavior.
+
+- [Drake hydroelastic contact tutorial notebook](https://github.com/RobotLocomotion/drake/blob/master/tutorials/hydroelastic_contact_basics.ipynb)  
+  A hands-on tutorial for setting up simulations with hydroelastic contact and inspecting contact results.
+
+- [A Pressure Field Model for Fast, Robust Approximation of Net Contact Force and Moment Between Nominally Rigid Objects](https://arxiv.org/abs/1904.11433)  
+  The foundational hydroelastic / pressure-field contact paper. It introduces the idea of object-centric pressure fields and contact surfaces defined by equal pressure.
+
+- [Velocity Level Approximation of Pressure Field Contact Patches](https://arxiv.org/abs/2110.04157)  
+  An important follow-up that makes pressure-field contact compatible with velocity-level time-stepping solvers, which is crucial for practical multibody simulation.
+
+</details>
+
+---
+
+<details>
+<summary><strong>underactuated links</strong></summary>
 
 https://underactuated.csail.mit.edu/
 
 https://github.com/RussTedrake/underactuated
 
 https://underactuated.csail.mit.edu/Spring2024/
+
+https://openreview.net/pdf?id=ogndqznZyY
 
 https://www.youtube.com/channel/UChfUOAhz7ynELF-s_1LPpWg
 
