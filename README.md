@@ -4,161 +4,161 @@ This repository collects my worked notebooks, implementation notes, and small co
 
 ---
 
-### Map
+<details>
+<summary><strong>Map</strong></summary>
 
-Repo notebook map for [`underactuated/book/`](underactuated/book/).
+Repo notebook map for [`underactuated/book/`](underactuated/book/). Folder names link to this repo; chapter titles link to the official notes.
 
-```text
-underactuated/book/
-|-- 00-tutorials/ - Drake tutorials; https://underactuated.csail.mit.edu/drake.html
-|  |-- index.ipynb - tutorial index; Drake tutorial index.
-|  |-- dynamical_systems.ipynb - Drake tutorial; LeafSystem and simulation basics.
-|  |-- authoring_leaf_systems.ipynb - Drake tutorial; Custom LeafSystem interface.
-|  |-- working_with_diagrams.ipynb - Drake tutorial; Diagram and Context composition.
-|  |-- authoring_multibody_simulation.ipynb - Drake tutorial; MultibodyPlant simulation template.
-|  |-- pyplot_animation_multibody_plant.ipynb - Drake tutorial; PyPlot multibody animation.
-|  |-- rendering_multibody_plant.ipynb - Drake tutorial; RGB-D and label rendering.
-|  |-- configuring_rendering_lighting.ipynb - Drake tutorial; PBR lighting configuration.
-|  |-- hydroelastic_contact_basics.ipynb - Drake tutorial; Hydroelastic contact basics.
-|  |-- hydroelastic_contact_nonconvex_mesh.ipynb - Drake tutorial; Nonconvex mesh contact.
-|  |-- autodiff_basics.ipynb - Drake tutorial; AutoDiff basics.
-|  |-- multibody_plant_autodiff_mass.ipynb - Drake tutorial; Mass-parameter AutoDiff.
-|  |-- mathematical_program.ipynb - Drake tutorial; MathematicalProgram core.
-|  |-- linear_program.ipynb - Drake tutorial; LP modeling template.
-|  |-- quadratic_program.ipynb - Drake tutorial; QP modeling template.
-|  |-- nonlinear_program.ipynb - Drake tutorial; NLP custom constraints.
-|  |-- sum_of_squares_optimization.ipynb - Drake tutorial; SOS/SDP basics.
-|  |-- debug_mathematical_program.ipynb - Drake tutorial; Optimization debugging.
-|  |-- solver_parameters.ipynb - Drake tutorial; Solver option setup.
-|  |-- updating_costs_and_constraints.ipynb - Drake tutorial; Update bindings between solves.
-|  |-- custom_gradients.ipynb - Drake tutorial; Manual optimization gradients.
-|  |-- mathematical_program_multibody_plant.ipynb - Drake tutorial; IIWA IK with AutoDiff evaluator.
-|  `-- licensed_solvers_deepnote.ipynb - Drake tutorial; Commercial solvers on Deepnote.
+- [`00-tutorials/`](underactuated/book/00-tutorials/) - [Drake tutorials](https://underactuated.csail.mit.edu/drake.html)
+  - [`index.ipynb`](underactuated/book/00-tutorials/index.ipynb) - tutorial index; Drake tutorial index.
+  - [`dynamical_systems.ipynb`](underactuated/book/00-tutorials/dynamical_systems.ipynb) - Drake tutorial; LeafSystem and simulation basics.
+  - [`authoring_leaf_systems.ipynb`](underactuated/book/00-tutorials/authoring_leaf_systems.ipynb) - Drake tutorial; Custom LeafSystem interface.
+  - [`working_with_diagrams.ipynb`](underactuated/book/00-tutorials/working_with_diagrams.ipynb) - Drake tutorial; Diagram and Context composition.
+  - [`authoring_multibody_simulation.ipynb`](underactuated/book/00-tutorials/authoring_multibody_simulation.ipynb) - Drake tutorial; MultibodyPlant simulation template.
+  - [`pyplot_animation_multibody_plant.ipynb`](underactuated/book/00-tutorials/pyplot_animation_multibody_plant.ipynb) - Drake tutorial; PyPlot multibody animation.
+  - [`rendering_multibody_plant.ipynb`](underactuated/book/00-tutorials/rendering_multibody_plant.ipynb) - Drake tutorial; RGB-D and label rendering.
+  - [`configuring_rendering_lighting.ipynb`](underactuated/book/00-tutorials/configuring_rendering_lighting.ipynb) - Drake tutorial; PBR lighting configuration.
+  - [`hydroelastic_contact_basics.ipynb`](underactuated/book/00-tutorials/hydroelastic_contact_basics.ipynb) - Drake tutorial; Hydroelastic contact basics.
+  - [`hydroelastic_contact_nonconvex_mesh.ipynb`](underactuated/book/00-tutorials/hydroelastic_contact_nonconvex_mesh.ipynb) - Drake tutorial; Nonconvex mesh contact.
+  - [`autodiff_basics.ipynb`](underactuated/book/00-tutorials/autodiff_basics.ipynb) - Drake tutorial; AutoDiff basics.
+  - [`multibody_plant_autodiff_mass.ipynb`](underactuated/book/00-tutorials/multibody_plant_autodiff_mass.ipynb) - Drake tutorial; Mass-parameter AutoDiff.
+  - [`mathematical_program.ipynb`](underactuated/book/00-tutorials/mathematical_program.ipynb) - Drake tutorial; MathematicalProgram core.
+  - [`linear_program.ipynb`](underactuated/book/00-tutorials/linear_program.ipynb) - Drake tutorial; LP modeling template.
+  - [`quadratic_program.ipynb`](underactuated/book/00-tutorials/quadratic_program.ipynb) - Drake tutorial; QP modeling template.
+  - [`nonlinear_program.ipynb`](underactuated/book/00-tutorials/nonlinear_program.ipynb) - Drake tutorial; NLP custom constraints.
+  - [`sum_of_squares_optimization.ipynb`](underactuated/book/00-tutorials/sum_of_squares_optimization.ipynb) - Drake tutorial; SOS/SDP basics.
+  - [`debug_mathematical_program.ipynb`](underactuated/book/00-tutorials/debug_mathematical_program.ipynb) - Drake tutorial; Optimization debugging.
+  - [`solver_parameters.ipynb`](underactuated/book/00-tutorials/solver_parameters.ipynb) - Drake tutorial; Solver option setup.
+  - [`updating_costs_and_constraints.ipynb`](underactuated/book/00-tutorials/updating_costs_and_constraints.ipynb) - Drake tutorial; Update bindings between solves.
+  - [`custom_gradients.ipynb`](underactuated/book/00-tutorials/custom_gradients.ipynb) - Drake tutorial; Manual optimization gradients.
+  - [`mathematical_program_multibody_plant.ipynb`](underactuated/book/00-tutorials/mathematical_program_multibody_plant.ipynb) - Drake tutorial; IIWA IK with AutoDiff evaluator.
+  - [`licensed_solvers_deepnote.ipynb`](underactuated/book/00-tutorials/licensed_solvers_deepnote.ipynb) - Drake tutorial; Commercial solvers on Deepnote.
 
-|-- 01-intro/ - Chapter 1, Fully-actuated vs Underactuated Systems; https://underactuated.csail.mit.edu/intro.html
-|  |-- intro.ipynb - Double pendulum dynamics intro.
-|  `-- exercises/drake_systems.ipynb - pset1; Write a simple Drake System.
+- [`01-intro/`](underactuated/book/01-intro/) - [Chapter 1, Fully-actuated vs Underactuated Systems](https://underactuated.csail.mit.edu/intro.html)
+  - [`intro.ipynb`](underactuated/book/01-intro/intro.ipynb) - Double pendulum dynamics intro.
+  - [`exercises/drake_systems.ipynb`](underactuated/book/01-intro/exercises/drake_systems.ipynb) - pset1; Write a simple Drake System.
 
-|-- 02-pend/ - Chapter 2, The Simple Pendulum; https://underactuated.csail.mit.edu/pend.html
-|  |-- pend.ipynb - Simple pendulum simulation.
-|  |-- attractivity.ipynb - Attractive unstable equilibrium.
-|  |-- autapse.ipynb - Single-neuron autapse dynamics.
-|  |-- lstm.ipynb - LSTM/JANET dynamics view.
-|  |-- energy_shaping.ipynb - Pendulum energy shaping swing-up.
-|  |-- exercises/attractivity_vs_stability.ipynb - Exercise 2.4; Attractivity vs stability.
-|  |-- exercises/vibrating_pendulum.ipynb - pset1; Vibrating-base pendulum control.
-|  `-- exercises/hopfield_network.ipynb - Exercise 2.6; Hopfield network image recovery.
+- [`02-pend/`](underactuated/book/02-pend/) - [Chapter 2, The Simple Pendulum](https://underactuated.csail.mit.edu/pend.html)
+  - [`pend.ipynb`](underactuated/book/02-pend/pend.ipynb) - Simple pendulum simulation.
+  - [`attractivity.ipynb`](underactuated/book/02-pend/attractivity.ipynb) - Attractive unstable equilibrium.
+  - [`autapse.ipynb`](underactuated/book/02-pend/autapse.ipynb) - Single-neuron autapse dynamics.
+  - [`lstm.ipynb`](underactuated/book/02-pend/lstm.ipynb) - LSTM/JANET dynamics view.
+  - [`energy_shaping.ipynb`](underactuated/book/02-pend/energy_shaping.ipynb) - Pendulum energy shaping swing-up.
+  - [`exercises/attractivity_vs_stability.ipynb`](underactuated/book/02-pend/exercises/attractivity_vs_stability.ipynb) - Exercise 2.4; Attractivity vs stability.
+  - [`exercises/vibrating_pendulum.ipynb`](underactuated/book/02-pend/exercises/vibrating_pendulum.ipynb) - pset1; Vibrating-base pendulum control.
+  - [`exercises/hopfield_network.ipynb`](underactuated/book/02-pend/exercises/hopfield_network.ipynb) - Exercise 2.6; Hopfield network image recovery.
 
-|-- 03-acrobot/ - Chapter 3, Acrobots, Cart-Poles, and Quadrotors; https://underactuated.csail.mit.edu/acrobot.html
-|  |-- acrobot.ipynb - Acrobot dynamics + LQR.
-|  |-- cartpole.ipynb - Cart-Pole dynamics + Meshcat.
-|  |-- cartpole_energy_shaping.ipynb - local example; Cart-Pole energy shaping.
-|  |-- planar_quadrotor.ipynb - Planar quadrotor LQR.
-|  |-- quadrotor.ipynb - 3D quadrotor MultibodyPlant.
-|  |-- flatness.ipynb - Differential flatness template.
-|  |-- exercises/cartpole_balancing.ipynb - pset3; Cart-Pole LQR balancing.
-|  `-- exercises/cartpoles_urdf.ipynb - pset3; Write a cart-pole URDF.
+- [`03-acrobot/`](underactuated/book/03-acrobot/) - [Chapter 3, Acrobots, Cart-Poles, and Quadrotors](https://underactuated.csail.mit.edu/acrobot.html)
+  - [`acrobot.ipynb`](underactuated/book/03-acrobot/acrobot.ipynb) - Acrobot dynamics + LQR.
+  - [`cartpole.ipynb`](underactuated/book/03-acrobot/cartpole.ipynb) - Cart-Pole dynamics + Meshcat.
+  - [`cartpole_energy_shaping.ipynb`](underactuated/book/03-acrobot/cartpole_energy_shaping.ipynb) - local example; Cart-Pole energy shaping.
+  - [`planar_quadrotor.ipynb`](underactuated/book/03-acrobot/planar_quadrotor.ipynb) - Planar quadrotor LQR.
+  - [`quadrotor.ipynb`](underactuated/book/03-acrobot/quadrotor.ipynb) - 3D quadrotor MultibodyPlant.
+  - [`flatness.ipynb`](underactuated/book/03-acrobot/flatness.ipynb) - Differential flatness template.
+  - [`exercises/cartpole_balancing.ipynb`](underactuated/book/03-acrobot/exercises/cartpole_balancing.ipynb) - pset3; Cart-Pole LQR balancing.
+  - [`exercises/cartpoles_urdf.ipynb`](underactuated/book/03-acrobot/exercises/cartpoles_urdf.ipynb) - pset3; Write a cart-pole URDF.
 
-|-- 04-simple_legs/ - Chapter 4, Simple Models of Walking and Running; https://underactuated.csail.mit.edu/simple_legs.html
-|  |-- rimless_wheel.ipynb - Rimless wheel limit cycle.
-|  |-- compass_gait.ipynb - Passive compass gait simulation.
-|  |-- slip.ipynb - SLIP hybrid events + map.
-|  |-- planar_one_leg_hopper.ipynb - local example; Planar hopper control draft.
-|  `-- exercises/one_d_hopper.ipynb - pset8; Raibert 1D hopper control.
+- [`04-simple_legs/`](underactuated/book/04-simple_legs/) - [Chapter 4, Simple Models of Walking and Running](https://underactuated.csail.mit.edu/simple_legs.html)
+  - [`rimless_wheel.ipynb`](underactuated/book/04-simple_legs/rimless_wheel.ipynb) - Rimless wheel limit cycle.
+  - [`compass_gait.ipynb`](underactuated/book/04-simple_legs/compass_gait.ipynb) - Passive compass gait simulation.
+  - [`slip.ipynb`](underactuated/book/04-simple_legs/slip.ipynb) - SLIP hybrid events + map.
+  - [`planar_one_leg_hopper.ipynb`](underactuated/book/04-simple_legs/planar_one_leg_hopper.ipynb) - local example; Planar hopper control draft.
+  - [`exercises/one_d_hopper.ipynb`](underactuated/book/04-simple_legs/exercises/one_d_hopper.ipynb) - pset8; Raibert 1D hopper control.
 
-|-- 05-humanoids/ - Chapter 5, Highly-articulated Legged Robots; https://underactuated.csail.mit.edu/humanoids.html
-|  |-- zmp_planner.ipynb - ZMP CoM trajectory planning.
-|  |-- littledog.ipynb - LittleDog gait optimization.
-|  |-- spot.ipynb - local example; Spot model visualization entry.
-|  |-- exercises/footstep_planning.ipynb - Exercise 5.1; MIQP footstep planning.
-|  `-- exercises/footstep_planning_gcs.ipynb - pset10; GCS footstep planning.
+- [`05-humanoids/`](underactuated/book/05-humanoids/) - [Chapter 5, Highly-articulated Legged Robots](https://underactuated.csail.mit.edu/humanoids.html)
+  - [`zmp_planner.ipynb`](underactuated/book/05-humanoids/zmp_planner.ipynb) - ZMP CoM trajectory planning.
+  - [`littledog.ipynb`](underactuated/book/05-humanoids/littledog.ipynb) - LittleDog gait optimization.
+  - [`spot.ipynb`](underactuated/book/05-humanoids/spot.ipynb) - local example; Spot model visualization entry.
+  - [`exercises/footstep_planning.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning.ipynb) - Exercise 5.1; MIQP footstep planning.
+  - [`exercises/footstep_planning_gcs.ipynb`](underactuated/book/05-humanoids/exercises/footstep_planning_gcs.ipynb) - pset10; GCS footstep planning.
 
-|-- 06-stochastic/ - Chapter 6, Model Systems with Stochasticity; https://underactuated.csail.mit.edu/stochastic.html
-|  `-- stochastic.ipynb - Batch stochastic particle simulation.
+- [`06-stochastic/`](underactuated/book/06-stochastic/) - [Chapter 6, Model Systems with Stochasticity](https://underactuated.csail.mit.edu/stochastic.html)
+  - [`stochastic.ipynb`](underactuated/book/06-stochastic/stochastic.ipynb) - Batch stochastic particle simulation.
 
-|-- 07-dp/ - Chapter 7, Dynamic Programming; https://underactuated.csail.mit.edu/dp.html
-|  |-- grid_world.ipynb - Grid-world value iteration.
-|  |-- on_a_mesh.ipynb - Mesh-based continuous DP.
-|  |-- mlp.ipynb - Neural fitted value iteration.
-|  |-- exercises/minimum_time.ipynb - pset2; Minimum-time value iteration.
-|  |-- exercises/lp_dp.ipynb - pset2; DP as a linear program.
-|  `-- exercises/pendulum_cvi.ipynb - pset4; Pendulum continuous FVI.
+- [`07-dp/`](underactuated/book/07-dp/) - [Chapter 7, Dynamic Programming](https://underactuated.csail.mit.edu/dp.html)
+  - [`grid_world.ipynb`](underactuated/book/07-dp/grid_world.ipynb) - Grid-world value iteration.
+  - [`on_a_mesh.ipynb`](underactuated/book/07-dp/on_a_mesh.ipynb) - Mesh-based continuous DP.
+  - [`mlp.ipynb`](underactuated/book/07-dp/mlp.ipynb) - Neural fitted value iteration.
+  - [`exercises/minimum_time.ipynb`](underactuated/book/07-dp/exercises/minimum_time.ipynb) - pset2; Minimum-time value iteration.
+  - [`exercises/lp_dp.ipynb`](underactuated/book/07-dp/exercises/lp_dp.ipynb) - pset2; DP as a linear program.
+  - [`exercises/pendulum_cvi.ipynb`](underactuated/book/07-dp/exercises/pendulum_cvi.ipynb) - pset4; Pendulum continuous FVI.
 
-|-- 08-lqr/ - Chapter 8, Linear Quadratic Regulators; https://underactuated.csail.mit.edu/lqr.html
-|  |-- continuous_vs_discrete_time.ipynb - Continuous/discrete LQR comparison.
-|  |-- value_iteration.ipynb - FVI reproduces LQR.
-|  |-- ballbot.ipynb - Ballbot reduced LQR.
-|  |-- manifold.ipynb - local example; LQR on manifold coordinates.
-|  `-- exercises/drake_diagrams.ipynb - pset2; Drake Diagram + LQR.
+- [`08-lqr/`](underactuated/book/08-lqr/) - [Chapter 8, Linear Quadratic Regulators](https://underactuated.csail.mit.edu/lqr.html)
+  - [`continuous_vs_discrete_time.ipynb`](underactuated/book/08-lqr/continuous_vs_discrete_time.ipynb) - Continuous/discrete LQR comparison.
+  - [`value_iteration.ipynb`](underactuated/book/08-lqr/value_iteration.ipynb) - FVI reproduces LQR.
+  - [`ballbot.ipynb`](underactuated/book/08-lqr/ballbot.ipynb) - Ballbot reduced LQR.
+  - [`manifold.ipynb`](underactuated/book/08-lqr/manifold.ipynb) - local example; LQR on manifold coordinates.
+  - [`exercises/drake_diagrams.ipynb`](underactuated/book/08-lqr/exercises/drake_diagrams.ipynb) - pset2; Drake Diagram + LQR.
 
-|-- 09-lyapunov/ - Chapter 9, Lyapunov Analysis; https://underactuated.csail.mit.edu/lyapunov.html
-|  |-- common_lyap_linear.ipynb - Common quadratic Lyapunov.
-|  |-- global_polynomial.ipynb - SOS Lyapunov search.
-|  |-- cubic_poly.ipynb - Cubic ROA certificate.
-|  |-- van_der_pol_w_alternations.ipynb - Van der Pol alternating SOS.
-|  |-- star_convex.ipynb - Nonconvex ROA example.
-|  |-- outer_approx.ipynb - Convex outer approximation.
-|  |-- global_pend.ipynb - Pendulum global stability.
-|  |-- approximate_dp.ipynb - SOS approximate DP.
-|  |-- sampling.ipynb - local example; Sampling + LP stability.
-|  |-- trig_poly.ipynb - local example; Trig polynomial verification.
-|  |-- exercises/control.ipynb - Exercise 9.8; Wheeled robot CLF control.
-|  |-- exercises/sos_and_psd.ipynb - pset6; PSD vs SOS polynomials.
-|  `-- exercises/van_der_pol.ipynb - pset5; Van der Pol SOS ROA.
+- [`09-lyapunov/`](underactuated/book/09-lyapunov/) - [Chapter 9, Lyapunov Analysis](https://underactuated.csail.mit.edu/lyapunov.html)
+  - [`common_lyap_linear.ipynb`](underactuated/book/09-lyapunov/common_lyap_linear.ipynb) - Common quadratic Lyapunov.
+  - [`global_polynomial.ipynb`](underactuated/book/09-lyapunov/global_polynomial.ipynb) - SOS Lyapunov search.
+  - [`cubic_poly.ipynb`](underactuated/book/09-lyapunov/cubic_poly.ipynb) - Cubic ROA certificate.
+  - [`van_der_pol_w_alternations.ipynb`](underactuated/book/09-lyapunov/van_der_pol_w_alternations.ipynb) - Van der Pol alternating SOS.
+  - [`star_convex.ipynb`](underactuated/book/09-lyapunov/star_convex.ipynb) - Nonconvex ROA example.
+  - [`outer_approx.ipynb`](underactuated/book/09-lyapunov/outer_approx.ipynb) - Convex outer approximation.
+  - [`global_pend.ipynb`](underactuated/book/09-lyapunov/global_pend.ipynb) - Pendulum global stability.
+  - [`approximate_dp.ipynb`](underactuated/book/09-lyapunov/approximate_dp.ipynb) - SOS approximate DP.
+  - [`sampling.ipynb`](underactuated/book/09-lyapunov/sampling.ipynb) - local example; Sampling + LP stability.
+  - [`trig_poly.ipynb`](underactuated/book/09-lyapunov/trig_poly.ipynb) - local example; Trig polynomial verification.
+  - [`exercises/control.ipynb`](underactuated/book/09-lyapunov/exercises/control.ipynb) - Exercise 9.8; Wheeled robot CLF control.
+  - [`exercises/sos_and_psd.ipynb`](underactuated/book/09-lyapunov/exercises/sos_and_psd.ipynb) - pset6; PSD vs SOS polynomials.
+  - [`exercises/van_der_pol.ipynb`](underactuated/book/09-lyapunov/exercises/van_der_pol.ipynb) - pset5; Van der Pol SOS ROA.
 
-|-- 10-trajopt/ - Chapter 10, Trajectory Optimization; https://underactuated.csail.mit.edu/trajopt.html
-|  |-- double_integrator.ipynb - Direct transcription/collocation intro.
-|  |-- dircol.ipynb - Drake dircol swing-up template.
-|  |-- perching.ipynb - Glider trajopt + finite-horizon LQR.
-|  |-- perching/perching.ipynb - Perching companion notebook.
-|  |-- mi_convex.ipynb - Mixed-integer collision avoidance.
-|  |-- gcs_quadrotor.ipynb - Quadrotor GCS planning + rounding.
-|  |-- ilqr_cartpole.ipynb - local example; Cart-Pole iLQR swing-up.
-|  |-- cartpole/MATLAB/ilqr_cartpole.ipynb - local example; MATLAB-style iLQR Cart-Pole.
-|  |-- cartpole/ct-scvx.ipynb - local example; Continuous-time SCvx.
-|  |-- compare_dirtrans_dircol.ipynb - local example; Compare transcription and collocation.
-|  |-- exercises/shooting_vs_transcription.ipynb - Exercise 10.1; Compare shooting/transcription.
-|  |-- exercises/orbital_transfer.ipynb - pset6; Earth-to-Mars rocket trajopt.
-|  `-- exercises/ilqr_driving.ipynb - pset7; Autonomous driving iLQR.
+- [`10-trajopt/`](underactuated/book/10-trajopt/) - [Chapter 10, Trajectory Optimization](https://underactuated.csail.mit.edu/trajopt.html)
+  - [`double_integrator.ipynb`](underactuated/book/10-trajopt/double_integrator.ipynb) - Direct transcription/collocation intro.
+  - [`dircol.ipynb`](underactuated/book/10-trajopt/dircol.ipynb) - Drake dircol swing-up template.
+  - [`perching.ipynb`](underactuated/book/10-trajopt/perching.ipynb) - Glider trajopt + finite-horizon LQR.
+  - [`perching/perching.ipynb`](underactuated/book/10-trajopt/perching/perching.ipynb) - Perching companion notebook.
+  - [`mi_convex.ipynb`](underactuated/book/10-trajopt/mi_convex.ipynb) - Mixed-integer collision avoidance.
+  - [`gcs_quadrotor.ipynb`](underactuated/book/10-trajopt/gcs_quadrotor.ipynb) - Quadrotor GCS planning + rounding.
+  - [`ilqr_cartpole.ipynb`](underactuated/book/10-trajopt/ilqr_cartpole.ipynb) - local example; Cart-Pole iLQR swing-up.
+  - [`cartpole/MATLAB/ilqr_cartpole.ipynb`](underactuated/book/10-trajopt/cartpole/MATLAB/ilqr_cartpole.ipynb) - local example; MATLAB-style iLQR Cart-Pole.
+  - [`cartpole/ct-scvx.ipynb`](underactuated/book/10-trajopt/cartpole/ct-scvx.ipynb) - local example; Continuous-time SCvx.
+  - [`compare_dirtrans_dircol.ipynb`](underactuated/book/10-trajopt/compare_dirtrans_dircol.ipynb) - local example; Compare transcription and collocation.
+  - [`exercises/shooting_vs_transcription.ipynb`](underactuated/book/10-trajopt/exercises/shooting_vs_transcription.ipynb) - Exercise 10.1; Compare shooting/transcription.
+  - [`exercises/orbital_transfer.ipynb`](underactuated/book/10-trajopt/exercises/orbital_transfer.ipynb) - pset6; Earth-to-Mars rocket trajopt.
+  - [`exercises/ilqr_driving.ipynb`](underactuated/book/10-trajopt/exercises/ilqr_driving.ipynb) - pset7; Autonomous driving iLQR.
 
-|-- 11-policy_search/ - Chapter 11, Policy Search; https://underactuated.csail.mit.edu/policy_search.html
-|  `-- policy_search.ipynb - LQR policy optimization.
+- [`11-policy_search/`](underactuated/book/11-policy_search/) - [Chapter 11, Policy Search](https://underactuated.csail.mit.edu/policy_search.html)
+  - [`policy_search.ipynb`](underactuated/book/11-policy_search/policy_search.ipynb) - LQR policy optimization.
 
-|-- 12-planning/ - Chapter 12, Sampling-based motion planning; https://underactuated.csail.mit.edu/planning.html
-|  `-- exercises/rrt_planning.ipynb - Exercise 12.1; Implement RRT/RRT*.
+- [`12-planning/`](underactuated/book/12-planning/) - [Chapter 12, Sampling-based motion planning](https://underactuated.csail.mit.edu/planning.html)
+  - [`exercises/rrt_planning.ipynb`](underactuated/book/12-planning/exercises/rrt_planning.ipynb) - Exercise 12.1; Implement RRT/RRT*.
 
-|-- 13-robust/ - Chapter 13, Robust and Stochastic Control; https://underactuated.csail.mit.edu/robust.html
-|  `-- quadrotor_in_wind.ipynb - Wind disturbance LQR.
+- [`13-robust/`](underactuated/book/13-robust/) - [Chapter 13, Robust and Stochastic Control](https://underactuated.csail.mit.edu/robust.html)
+  - [`quadrotor_in_wind.ipynb`](underactuated/book/13-robust/quadrotor_in_wind.ipynb) - Wind disturbance LQR.
 
-|-- 15-output_feedback/ - Chapter 15, Output Feedback (aka Pixels-to-Torques); https://underactuated.csail.mit.edu/output_feedback.html
-|  `-- acrobot_w_encoders.ipynb - local example; Encoder-only Acrobot.
+- [`15-output_feedback/`](underactuated/book/15-output_feedback/) - [Chapter 15, Output Feedback (aka Pixels-to-Torques)](https://underactuated.csail.mit.edu/output_feedback.html)
+  - [`acrobot_w_encoders.ipynb`](underactuated/book/15-output_feedback/acrobot_w_encoders.ipynb) - local example; Encoder-only Acrobot.
 
-|-- 16-limit_cycles/ - Chapter 16, Algorithms for Limit Cycles; https://underactuated.csail.mit.edu/limit_cycles.html
-|  `-- limit_cycles.ipynb - Van der Pol limit cycle trajopt.
+- [`16-limit_cycles/`](underactuated/book/16-limit_cycles/) - [Chapter 16, Algorithms for Limit Cycles](https://underactuated.csail.mit.edu/limit_cycles.html)
+  - [`limit_cycles.ipynb`](underactuated/book/16-limit_cycles/limit_cycles.ipynb) - Van der Pol limit cycle trajopt.
 
-|-- 17-contact/ - Chapter 17, Planning and Control through Contact; https://underactuated.csail.mit.edu/contact.html
-|  |-- rimless_wheel.ipynb - Contact-aware rimless trajopt.
-|  |-- basketball.ipynb - Basketball hybrid trajopt.
-|  |-- hybrid.ipynb - local example; Hybrid multibody collocation.
-|  `-- exercises/compass_gait_limit_cycle.ipynb - pset8; Compass gait limit-cycle NLP.
+- [`17-contact/`](underactuated/book/17-contact/) - [Chapter 17, Planning and Control through Contact](https://underactuated.csail.mit.edu/contact.html)
+  - [`rimless_wheel.ipynb`](underactuated/book/17-contact/rimless_wheel.ipynb) - Contact-aware rimless trajopt.
+  - [`basketball.ipynb`](underactuated/book/17-contact/basketball.ipynb) - Basketball hybrid trajopt.
+  - [`hybrid.ipynb`](underactuated/book/17-contact/hybrid.ipynb) - local example; Hybrid multibody collocation.
+  - [`exercises/compass_gait_limit_cycle.ipynb`](underactuated/book/17-contact/exercises/compass_gait_limit_cycle.ipynb) - pset8; Compass gait limit-cycle NLP.
 
-|-- 18-sysid/ - Chapter 18, System Identification; https://underactuated.csail.mit.edu/sysid.html
-|  |-- sysid.ipynb - Acrobot/Cart-Pole sysid.
-|  |-- exercises/linear_sysid.ipynb - Exercise 18.1; Linear A/B least-squares.
-|  `-- exercises/glider_sysid.ipynb - Exercise 18.2; Glider basis-function sysid.
+- [`18-sysid/`](underactuated/book/18-sysid/) - [Chapter 18, System Identification](https://underactuated.csail.mit.edu/sysid.html)
+  - [`sysid.ipynb`](underactuated/book/18-sysid/sysid.ipynb) - Acrobot/Cart-Pole sysid.
+  - [`exercises/linear_sysid.ipynb`](underactuated/book/18-sysid/exercises/linear_sysid.ipynb) - Exercise 18.1; Linear A/B least-squares.
+  - [`exercises/glider_sysid.ipynb`](underactuated/book/18-sysid/exercises/glider_sysid.ipynb) - Exercise 18.2; Glider basis-function sysid.
 
-|-- App-B-multibody/ - Appendix B, Multi-Body Dynamics; https://underactuated.csail.mit.edu/multibody.html
-|  `-- multibody.ipynb - LCP vs relaxed contact.
+- [`App-B-multibody/`](underactuated/book/App-B-multibody/) - [Appendix B, Multi-Body Dynamics](https://underactuated.csail.mit.edu/multibody.html)
+  - [`multibody.ipynb`](underactuated/book/App-B-multibody/multibody.ipynb) - LCP vs relaxed contact.
 
-|-- App-C-optimization/ - Appendix C, Optimization and Mathematical Programming; https://underactuated.csail.mit.edu/optimization.html
-|  |-- sdp.ipynb - SDP relaxation template.
-|  |-- sos_six_hump_camel.ipynb - Six-Hump Camel via SOS.
-|  `-- gcs.ipynb - GCS shortest path template.
+- [`App-C-optimization/`](underactuated/book/App-C-optimization/) - [Appendix C, Optimization and Mathematical Programming](https://underactuated.csail.mit.edu/optimization.html)
+  - [`sdp.ipynb`](underactuated/book/App-C-optimization/sdp.ipynb) - SDP relaxation template.
+  - [`sos_six_hump_camel.ipynb`](underactuated/book/App-C-optimization/sos_six_hump_camel.ipynb) - Six-Hump Camel via SOS.
+  - [`gcs.ipynb`](underactuated/book/App-C-optimization/gcs.ipynb) - GCS shortest path template.
 
-`-- figures/ - figure helper notebooks; https://underactuated.csail.mit.edu/
-   |-- Quadrotor2D.ipynb - figure helper; Planar quadrotor figure.
-   `-- lcp_cart.ipynb - figure helper; LCP cart contact surface.
-```
+- [`figures/`](underactuated/book/figures/) - [figure helper notebooks](https://underactuated.csail.mit.edu/)
+  - [`Quadrotor2D.ipynb`](underactuated/book/figures/Quadrotor2D.ipynb) - figure helper; Planar quadrotor figure.
+  - [`lcp_cart.ipynb`](underactuated/book/figures/lcp_cart.ipynb) - figure helper; LCP cart contact surface.
+
+</details>
 
 ---
 
