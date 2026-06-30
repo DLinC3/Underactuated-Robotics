@@ -157,7 +157,8 @@ underactuated/book/
 
 `-- figures/ - figure helper notebooks; https://underactuated.csail.mit.edu/
    |-- Quadrotor2D.ipynb - figure helper; Planar quadrotor figure.
-   `-- lcp_cart.ipynb - figure helper; LCP cart contact surface.```
+   `-- lcp_cart.ipynb - figure helper; LCP cart contact surface.
+```
 
 ---
 
