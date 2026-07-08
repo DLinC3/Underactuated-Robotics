@@ -4,6 +4,47 @@ This repository collects my worked notebooks, implementation notes, and small co
 
 ---
 
+### Quick Start
+
+This repo keeps local copies of the MIT Underactuated Robotics notebooks under [`underactuated/book/`](underactuated/book/). The course workflow is Deepnote, use this repo if you want to run and edit the notebooks locally.
+
+Recommended setup: `venv + pip`. The venv is created outside the repo as `~/.venvs/underactuated` so it does not collide with the tracked `underactuated/` source directory.
+
+Drake currently supports CPython 3.12-3.14 on Linux and 3.13-3.14 on macOS arm64; if your system Python is outside that range, use the Miniforge option below.
+
+#### Local Setup
+
+```bash
+git clone --recurse-submodules https://github.com/DLinC3/Underactuated-Robotics.git
+cd Underactuated-Robotics
+
+python3 -m venv ~/.venvs/underactuated
+source ~/.venvs/underactuated/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install -e "underactuated[all]" notebook \
+  --extra-index-url https://drake-packages.csail.mit.edu/whl/nightly/
+
+cd underactuated/book
+jupyter notebook
+```
+
+Use this if your system Python is not supported by Drake, or if you prefer conda-managed Python:
+
+```bash
+conda create -n underactuated python=3.13
+conda activate underactuated
+
+python -m pip install --upgrade pip
+python -m pip install -e "underactuated[all]" notebook \
+  --extra-index-url https://drake-packages.csail.mit.edu/whl/nightly/
+
+cd underactuated/book
+jupyter notebook
+```
+
+---
+
 <details>
 <summary><strong>Map</strong></summary>
 
@@ -146,8 +187,8 @@ Repo notebook map for [`underactuated/book/`](underactuated/book/). Folder names
   - [`exercises/linear_sysid.ipynb`](underactuated/book/18-sysid/exercises/linear_sysid.ipynb) - Exercise 18.1; Linear A/B least-squares.
   - [`exercises/glider_sysid.ipynb`](underactuated/book/18-sysid/exercises/glider_sysid.ipynb) - Exercise 18.2; Glider basis-function sysid.
 
-- [`App-B-multibody/`](underactuated/book/App-B-multibody/) - [Appendix B, Multi-Body Dynamics](https://underactuated.csail.mit.edu/multibody.html)
-  - [`multibody.ipynb`](underactuated/book/App-B-multibody/multibody.ipynb) - LCP vs relaxed contact.
+- [`App-b-multibody/`](underactuated/book/App-b-multibody/) - [Appendix B, Multi-Body Dynamics](https://underactuated.csail.mit.edu/multibody.html)
+  - [`multibody.ipynb`](underactuated/book/App-b-multibody/multibody.ipynb) - LCP vs relaxed contact.
 
 - [`App-C-optimization/`](underactuated/book/App-C-optimization/) - [Appendix C, Optimization and Mathematical Programming](https://underactuated.csail.mit.edu/optimization.html)
   - [`sdp.ipynb`](underactuated/book/App-C-optimization/sdp.ipynb) - SDP relaxation template.
@@ -308,7 +349,7 @@ This section reviews decision variables, costs, constraints, solvers, debugging,
 - [`littledog.ipynb`](underactuated/book/05-humanoids/littledog.ipynb) — A quadruped code study in generated `namedview` position/velocity views, per-gait `in_stance`/stride bookkeeping, per-timestep AutoDiff contexts, and whole-body (centroidal + full-kinematics) trajectory optimization with `PositionConstraint`/`OrientationConstraint`.
 - [`compass_gait_limit_cycle.ipynb`](underactuated/book/17-contact/exercises/compass_gait_limit_cycle.ipynb) — Packages floating-base compass-gait dynamics into AutoDiff-compatible `MathematicalProgram` callbacks (manipulator equations, swing-foot kinematics, heel-strike impulse) with friction-cone contact forces and mirrored-periodicity constraints.
 - [`basketball.ipynb`](underactuated/book/17-contact/basketball.ipynb) — A fixed-mode-sequence hybrid optimization that stitches analytic ballistic flight arcs together with `set_description`-labeled guard constraints and restitution/spin reset maps.
-- [`multibody.ipynb`](underactuated/book/App-B-multibody/multibody.ipynb) — Compares time-stepping LCP contact resolution against MuJoCo-style relaxed complementarity-free contact by building the `q[n+1]` and contact-force `f[n]` update surfaces over the `(q, v)` grid.
+- [`multibody.ipynb`](underactuated/book/App-b-multibody/multibody.ipynb) — Compares time-stepping LCP contact resolution against MuJoCo-style relaxed complementarity-free contact by building the `q[n+1]` and contact-force `f[n]` update surfaces over the `(q, v)` grid.
 - [`gcs.ipynb`](underactuated/book/App-C-optimization/gcs.ipynb) — A reusable Drake GCS pattern: `AddVertex` over `Point`/`VPolytope`/`Hyperellipsoid` sets, `AddEdge` costs, `e.xu()`/`e.xv()` edge variables, and a `SolveShortestPath` relaxation that reduces to the classic LP when every vertex is a point.
 
 </details>
