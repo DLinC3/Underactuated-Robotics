@@ -6,9 +6,7 @@ This repository collects my worked notebooks, implementation notes, and small co
 
 ### Quick Start
 
-This repo keeps local copies of the MIT Underactuated Robotics notebooks under [`underactuated/book/`](underactuated/book/). The course workflow is Deepnote, use this repo if you want to run and edit the notebooks locally.
-
-Recommended setup: `venv + pip`. The venv is created outside the repo as `~/.venvs/underactuated` so it does not collide with the tracked `underactuated/` source directory.
+This repo keeps local copies of the MIT Underactuated Robotics Deepnote notebooks under [`underactuated/book/`](underactuated/book/). Recommended setup: `venv + pip`. The venv is created outside the repo as `~/.venvs/underactuated`.
 
 Drake currently supports CPython 3.12-3.14 on Linux and 3.13-3.14 on macOS arm64; if your system Python is outside that range, use the Miniforge option below.
 
