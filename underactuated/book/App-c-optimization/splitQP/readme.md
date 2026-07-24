@@ -1,6 +1,10 @@
 # splitQP
 
-A tiny OSQP-style QP solver. It rebuilds the ADMM / operator-splitting core from scratch: augmented-Lagrangian splitting, sparse KKT solves, over-relaxation, factorization caching, adaptive rho updates, and residual-based stopping. Small enough to read, but faithful enough to show OSQP-style iterations.
+A tiny JAX solver for families of dense convex quadratic programs that share a
+fixed quadratic and constraint matrix. It implements proximal ADMM, and its one
+idea is factorization reuse: `Solver(P, A)` factors a single matrix at
+construction and reuses it for every iteration and every member of the family.
+This is a compact educational research implementation, not a production solver.
 
 ## Clone
 

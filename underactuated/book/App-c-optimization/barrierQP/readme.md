@@ -1,6 +1,10 @@
 # barrierQP
 
-A tiny Mehrotra-style predictor-corrector primal-dual interior-point QP solver. It rebuilds method used in solvers CVXGEN/qpSWIFT/HPIPM from scratch: affine prediction, adaptive centering/correction, positivity-preserving step control, strictly interior initialization, and residual-based safeguards. Useful for seeing the algorithmic logic behind CVXGEN/qpSWIFT/HPIPM QP solvers.
+A tiny JAX solver for dense, strictly convex quadratic programs with equality and
+inequality constraints. It implements Mehrotra's primal-dual predictor-corrector
+interior-point method, and its one idea is factorization reuse: each iteration
+factors a single KKT matrix and reuses it for both Newton directions. This is a
+compact educational research implementation, not a production solver.
 
 ## Clone
 
