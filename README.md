@@ -13,7 +13,7 @@ Drake currently supports CPython 3.12-3.14 on Linux and 3.13-3.14 on macOS arm64
 #### Local Setup
 
 ```bash
-git clone --recurse-submodules https://github.com/DLinC3/Underactuated-Robotics.git
+git clone https://github.com/DLinC3/Underactuated-Robotics.git
 cd Underactuated-Robotics
 
 python3 -m venv ~/.venvs/underactuated
